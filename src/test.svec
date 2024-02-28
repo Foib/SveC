@@ -1,0 +1,24 @@
+<script lang="ts">
+    /* {svecSlot} */;
+
+    onMount(() => {
+        console.log(y);
+	});
+</script>
+
+{#comp Test}
+    <script lang="ts">
+        let x = 0;
+        let y = "Test";
+
+        console.log(x);
+    </script>
+
+    <div>
+        <p>Hello</p>
+    </div>
+{/comp}
+
+{#comp AnotherComp}
+    <h1>Hello there!</h1>
+{/comp}
